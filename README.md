@@ -56,7 +56,7 @@ This gives the corresponding anaphora resolution for any given text. Coreference
         [[u'He', 5, 0, 0, 1], [u'Trump', 4, 0, 0, 1]],
         [[u'Trump', 5, 2, 2, 3], [u'Trump', 4, 0, 0, 1]]]]
 
-The final result after rephrasing the text with its coreferencen is:
+The final result after rephrasing the text with its coreference is:
 
         [['Obama is the the president of US .',
         'Florida is a nice place .',
