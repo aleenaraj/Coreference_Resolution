@@ -56,8 +56,7 @@ This gives the corresponding anaphora resolution for any given text. Coreference
         [[u'He', 5, 0, 0, 1], [u'Trump', 4, 0, 0, 1]],
         [[u'Trump', 5, 2, 2, 3], [u'Trump', 4, 0, 0, 1]]]]
 
-Passing this result through the coref_rephrase() function gives the modified text with the replaced 
-anaphora and hence the final result.
+Pass the text through the coref_rephrase() function. Functionality in the coref_rephrase includes running corenlp coref on the text, tokenizing the given sentence to the most granular level that being word tokenization and then replacing the anaphora in the text with the corresponding antecedent and hence the final result.
 
 The final result after rephrasing the text with its coreference is:
 
