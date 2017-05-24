@@ -1,4 +1,4 @@
-# **Stanford Corenlp**
+## **Coreference Resolution for a text using Stanford CoreNLP**
 
 This is a Python wrapper for Stanford University's NLP group's Java-based CoreNLP tools. It can either be imported as a module or run as a JSON-RPC server. Because it uses many large trained models (requiring 3GB RAM on 64-bit machines and usually a few minutes loading time), most applications will probably want to run it as a server.
 
@@ -55,6 +55,9 @@ This gives the corresponding anaphora resolution for any given text. Coreference
         [[[u'the current president', 4, 4, 2, 5], [u'Trump', 4, 0, 0, 1]],
         [[u'He', 5, 0, 0, 1], [u'Trump', 4, 0, 0, 1]],
         [[u'Trump', 5, 2, 2, 3], [u'Trump', 4, 0, 0, 1]]]]
+
+Passing this result through the coref_rephrase() function gives the modified text with the replaced 
+anaphora and hence the final result.
 
 The final result after rephrasing the text with its coreference is:
 
